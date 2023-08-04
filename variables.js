@@ -90,3 +90,29 @@ console.log( num1 !== num2 ) // ---> ESTRICTA
 // console.log( num1 <= num2 )
 
 // LINK ---> logicos
+
+console.log("---------------")
+// AND ---> &&
+
+let estaLogueado = false
+let esAdmin = false
+
+// CON EL ULTIMO Truthy, O CON EL PRIMER FALSY
+// FALSY ---> 0 - undefined - null - ""
+// TRUTHY ---> 1 - [] - {} - "mama"
+let tienePermiso = estaLogueado === true && esAdmin === true 
+
+console.log(tienePermiso)
+
+// OR ---> || 
+// CON EL primer Truthy, O CON EL Ultimo FALSY
+let tienePermiso2 =  estaLogueado === true || esAdmin === true || 0 || undefined
+console.log(tienePermiso2)
+
+
+// NOT ---> !
+
+let r = true 
+
+console.log( r )
+console.log( !r )
